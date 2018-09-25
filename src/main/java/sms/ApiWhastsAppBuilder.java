@@ -35,7 +35,7 @@ public class ApiWhastsAppBuilder{
 		// To use WhatsApp on your computer: Scanning Required
 		try {
 			WebElement scan = driver.findElementByXPath("//div[text()='To use WhatsApp on your computer:']");
-			waituntiDisappear(scan);
+			waitTillDisappear(scan);
 		} catch (Exception e) {
 		}
 	}
@@ -72,7 +72,7 @@ public class ApiWhastsAppBuilder{
 		wait.until(ExpectedConditions.elementToBeClickable(element)).click();
 	}
 
-	public void waituntiDisappear(WebElement element) {
+	public void waitTillDisappear(WebElement element) {
 		try {
 			Thread.sleep(500);
 		} catch (InterruptedException e) {
