@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" verbose="5">
+
+	<!-- <groups>
+		<run>
+			<include name="s.*"></include>
+			<include name="sanity"></include>
+			<include name="reg"></include>
+			<include name="common"></include>
+			<exclude name="smoke"></exclude>
+		</run>
+	</groups> -->
+	<parameter name="url" value="http://leaftaps.com/opentaps"></parameter>
+	<parameter name="browser" value="chrome"></parameter>
+	<parameter name="username" value="DemoSalesManager"></parameter>
+	<parameter name="password" value="crmsfa"></parameter>
+	<test thread-count="5" name="Test">
+		<classes>
+			<!-- <class name="testcases.TC02_EditLead" /> -->
+			<class name="testcases.TC01_CreateLead"></class>
+				
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
+
+
+
